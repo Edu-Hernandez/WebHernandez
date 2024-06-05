@@ -1,0 +1,55 @@
+/* Estilos para el carrusel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    width: 300px; /* Tamaño deseado para todos los elementos */
+    height: auto;
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+.carousel-item img,
+.carousel-item iframe {
+    width: 100%;
+    height: 200px; /* Altura deseada para todos los elementos */
+    object-fit: cover; /* Para asegurarse de que el contenido se ajuste correctamente */
+}
+/* Estilos para los botones */
+.prev,
+.next {
+    background-color: #a1770d; /* Color de fondo */
+    border: none;
+    color: white; /* Color del texto */
+    padding: 5px 10px; /* Espacio interior */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 24px; /* Borde redondeado */
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #6c5205; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para contenedor de botones */
+.carousel-controls {
+    text-align: center;
+}
+
+.prev {
+    float: left; /* Posiciona el botón Anterior a la izquierda */
+}
+
+.next {
+    float: right; /* Posiciona el botón Siguiente a la derecha */
+}
+
+
