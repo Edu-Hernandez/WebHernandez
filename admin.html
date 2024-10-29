@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Gestionar Mensajes</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/disenio.css">
+    <link rel="stylesheet" href="css/desgcert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h2>Mensajes Recibidos</h2>
+    <div id="mensajesContainer"></div>
+
+    <script>
+        // Función para cargar y mostrar los mensajes
+        function loadMessages() {
+            const mensajes = JSON.parse(localStorage.getItem('mensajes')) || [];
+            const container = document.getElementById('mensajesContainer');
+            container.innerHTML = ''; // Limpiar el contenedor
+
+            mensajes.forEach((msg, index) => {
+                const msgDiv = document.createElement('div');
+                msgDiv.innerHTML = `
+                    <h4>${msg.nombre} - ${msg.tema}</h4>
+                    <p>${msg.mensaje}</p>
+                    <p><strong>Contacto:</strong> ${msg.email} - ${msg.telefono}</p>
+                    <button onclick="deleteMessage(${index})">Eliminar</button>
+                    <button onclick="replyToMessage(${index})">Responder</button>
+                    <div id="respuesta-${index}"></div>
+                `;
+                container.appendChild(msgDiv);
+            });
+        }
+
+        // Función para eliminar un mensaje
+        function deleteMessage(index) {
+            const mensajes = JSON.parse(localStorage.getItem('mensajes')) || [];
+            mensajes.splice(index, 1); // Eliminar el mensaje
+            localStorage.setItem('mensajes', JSON.stringify(mensajes)); // Actualizar el localStorage
+            loadMessages(); // Recargar mensajes
+        }
+
+        // Función para responder a un mensaje
+        function replyToMessage(index) {
+            const respuesta = prompt('Escribe tu respuesta:');
+            if (respuesta) {
+                const mensajes = JSON.parse(localStorage.getItem('mensajes')) || [];
+                const msgDiv = document.getElementById(`respuesta-${index}`);
+                const respuestaP = document.createElement('p');
+                respuestaP.textContent = `Respuesta: ${respuesta}`;
+                msgDiv.appendChild(respuestaP);
+                mensajes[index].respuestas = mensajes[index].respuestas || [];
+                mensajes[index].respuestas.push(respuesta); // Agregar respuesta al mensaje
+                localStorage.setItem('mensajes', JSON.stringify(mensajes)); // Actualizar el localStorage
+            }
+        }
+
+        // Cargar mensajes al cargar la página
+        window.onload = loadMessages;
+    </script>
+    <script src="script.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="resources/js/sweetAlert.js"></script>
+    <script src="descCV.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script>
+        function mostrarAlerta() {
+            swal("Carga de proyectos en proceso", "Gracias por visitar mi página web", "info");
+        }
+    </script>
+</body>
+</html>
