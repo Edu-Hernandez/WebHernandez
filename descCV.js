@@ -2,7 +2,7 @@
 
     document.getElementById('downloadBtn').addEventListener('click', function() {
         const link = document.createElement('a');
-        link.href = 'cv/MiCV-Hernandez (2).pdf'; // Reemplaza 'tu-cv.pdf' con el nombre de tu archivo o la URL donde esté alojado
+        link.href = 'cv/MiCV-Hernandez (7).pdf'; // Reemplaza 'tu-cv.pdf' con el nombre de tu archivo o la URL donde esté alojado
         link.download = 'EduHernandez-CV.pdf'; // Nombre con el que se descargará el archivo
         link.click();
     });

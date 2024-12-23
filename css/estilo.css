@@ -29,7 +29,7 @@ html {
 .contenedor-header header .logo a {
   font-family: "Righteous";
   font-size: 36px;
-  color: #b47835;
+  color: rgb(39, 174, 96);
   text-decoration: none;
 }
 .contenedor-header header ul {
@@ -38,17 +38,17 @@ html {
 }
 .contenedor-header header nav ul li a {
   text-align: none;
-  color: #b47835;
+  color: rgb(39, 174, 96);
   margin: 0 15px;
   padding: 3px;
   transition: 0.5s;
   text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover {
-  color: #b47835;
+  color: rgb(39, 174, 96);
 }
 .nav-responsive {
-  background-color: #b47835;
+  background-color: rgb(39, 174, 96);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -57,15 +57,16 @@ html {
 }
 /* SECCION I N I C I O */
 .inicio {
+  margin-top: 30px;
   background: linear-gradient(
       to top,
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url("../img/edu10.jpeg");
+    url("../img/6939772.jpg");
   background-size: cover;
   height: 100vh;
-  color: #b47835;
+  color: rgb(39, 174, 96);
   display: flex;
   align-items: center;
 }
@@ -79,7 +80,7 @@ html {
 }
 .inicio .contenido-banner img {
   margin-top: 40px;
-  border: 10px solid #b47835;
+  border: 5px solid rgb(39, 174, 96);
   display: block;
   width: 70%;
   height: 100%;
@@ -89,14 +90,14 @@ html {
 .inicio .contenido-banner h1 {
   margin-top: 40px;
   font-size: 42px;
-  font-family: "Righteous";
+  font-family: revert-layer;
 }
 .inicio .contenido-banner h2 {
   font-size: 15px;
   font-weight: normal;
 }
 .inicio .contenido-banner .redes a {
-  color: #b47835;
+  color: rgb(39, 174, 96);
   display: inline-block;
   text-decoration: none;
   border: 1px solid #fff;
@@ -117,7 +118,7 @@ html {
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url("../img/edu10.jpeg");
+    url("../img/6939772.jpg");
   background-size: cover;
   /* background-color: #1e2326; */
   color: #fff;
@@ -141,7 +142,7 @@ html {
   margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span {
-  color: #ecc087;
+  color: rgb(39, 174, 96);
   font-weight: bold;
 }
 .sobremi .fila {
@@ -164,11 +165,11 @@ html {
 }
 .sobremi .fila .col ul li strong {
   display: inline-block;
-  color: #e9a321;
+  color: rgb(39, 174, 96);
   width: 130px;
 }
 .sobremi .fila .col ul li span {
-  background-color: #e9a321;
+  background-color: rgb(39, 174, 96);
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
@@ -190,7 +191,7 @@ html {
   transition: 0.3s;
 }
 .sobremi .fila .col .contenedor-intereses .interes:hover {
-  background-color: #e99b09f9;
+  background-color: rgb(39, 174, 96);
 }
 .sobremi .fila .col .contenedor-intereses .interes i {
   font-size: 30px;
@@ -215,7 +216,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #e9a321;
+  background-color: rgb(39, 174, 96);
   z-index: -1;
   transition: 1s;
 }
@@ -229,342 +230,13 @@ html {
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url("../img/edu5.jpeg");
+    url("../img/6939772.jpg");
   background-size: cover;
   /* background-color: #252A2E; */
   color: #ffffff;
   padding: 50px 20px;
 }
-.skills .contenido-seccion {
-  max-width: 1100px;
-  margin: auto;
-}
-.skills h2 {
-  font-size: 48px;
-  font-family: "Righteous";
-  text-align: center;
-  padding: 20px 0;
-}
-.skills .fila {
-  display: flex;
-}
-.skills .fila .col {
-  width: 50%;
-  padding: 0 20px;
-}
-.skills .fila .col h3 {
-  font-size: 28px;
-  font-family: "Righteous";
-  margin-bottom: 25px;
-}
-.skills .skill > span {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
-}
-.skills .skill .barra-skill {
-  height: 8px;
-  width: 80%;
-  background-color: #131517;
-  position: relative;
-  margin-bottom: 30px;
-}
-.skills .skill .progreso {
-  background-color: #bf7310;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 8px;
-}
-.skills .skill .barra-skill span {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #908818;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
-  top: -17px;
-  right: -15px;
-  font-size: 14px;
-}
-/* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
-}
-@keyframes javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 65%;
-  }
-}
 
-.skills .skill .php {
-  width: 0%;
-  animation: 2s php forwards;
-}
-@keyframes php {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-
-.skills .skill .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .java {
-  width: 0%;
-  animation: 2s java forwards;
-}
-@keyframes java {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 65%;
-  }
-}
-
-.skills .skill .python {
-  width: 0%;
-  animation: 2s python forwards;
-}
-@keyframes python {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 55%;
-  }
-}
-
-.skills .skill .mysql {
-  width: 0%;
-  animation: 2s mysql forwards;
-}
-@keyframes mysql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-.skills .skill .sql {
-  width: 0%;
-  animation: 2s sql forwards;
-}
-@keyframes sql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .erwin {
-  width: 0%;
-  animation: 2s erwin forwards;
-}
-@keyframes erwin {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .figma {
-  width: 0%;
-  animation: 2s figma forwards;
-}
-@keyframes figma {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-.skills .skill .lucid {
-  width: 0%;
-  animation: 2s lucid forwards;
-}
-@keyframes lucid {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 84%;
-  }
-}
-.skills .skill .unity {
-  width: 0%;
-  animation: 2s unity forwards;
-}
-@keyframes unity {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.skills .skill .cinema4d {
-  width: 0%;
-  animation: 2s cinema4d forwards;
-}
-@keyframes cinema4d {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-.skills .skill .boostrap {
-  width: 0%;
-  animation: 2s boostrap forwards;
-}
-@keyframes boostrap {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-.skills .skill .bulma {
-  width: 0%;
-  animation: 2s bulma forwards;
-}
-@keyframes bulma {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.skills .skill .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-@keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .trabajo {
-  width: 0%;
-  animation: 2s trabajo forwards;
-}
-@keyframes trabajo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 99%;
-  }
-}
-
-.skills .skill .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 65%;
-  }
-}
-
-.skills .skill .proyect {
-  width: 0%;
-  animation: 2s proyect forwards;
-}
-@keyframes proyect {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 94%;
-  }
-}
-.skills .skill .responsabilidad {
-  width: 0%;
-  animation: 2s responsabilidad forwards;
-}
-@keyframes responsabilidad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 98%;
-  }
-}
-.skills .skill .compromiso {
-  width: 0%;
-  animation: 2s compromiso forwards;
-}
-@keyframes compromiso {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 94%;
-  }
-}
-/* de aca en adelante */
-.skills .skill .compromiso {
-  width: 0%;
-  animation: 2s compromiso forwards;
-}
-@keyframes compromiso {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 94%;
-  }
-}
 /* SECCION CURRICULUM */
 .curriculum {
   background: linear-gradient(
@@ -572,7 +244,7 @@ html {
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url("../img/edu6.jpeg");
+    url("../img/6939772.jpg");
   background-size: cover;
   /* background-color: #1e2326; */
   color: #fff;
@@ -593,7 +265,7 @@ html {
   justify-content: space-between;
 }
 .curriculum .fila .col {
-  width: 49%;
+  width: 100%;
   padding: 0 20px;
 }
 .curriculum .fila .col h3 {
@@ -618,30 +290,30 @@ html {
   margin-bottom: 10px;
 }
 .curriculum .fila .item .casa {
-  color: #e9a321;
+  color: rgb(39, 174, 96);
   font-size: 22px;
   font-weight: bold;
   display: block;
 }
 .curriculum .fila .item .fecha {
   display: block;
-  color: #e9a321;
+  color: rgb(39, 174, 96);
   margin-bottom: 10px;
 }
 .curriculum .fila .item p {
   line-height: 24px;
 }
 .curriculum .fila .izq {
-  border-right: 2px solid #e9a321;
+  border-right: 2px solid rgb(39, 174, 96);
   margin-right: 20px;
 }
 .curriculum .fila .der {
-  border-left: 2px solid #e9a321;
+  border-left: 2px solid rgb(39, 174, 96);
   margin-left: 20px;
 }
 .curriculum .fila .item .conectori {
   height: 2px;
-  background-color: #e9a321;
+  background-color: rgb(39, 174, 96);
   width: 47px;
   position: absolute;
   top: 50%;
@@ -653,14 +325,14 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #e9a321;
+  background-color: rgb(39, 174, 96);
   float: right;
   position: relative;
   bottom: 4px;
 }
 .curriculum .fila .item .conectord {
   height: 2px;
-  background-color: #e9a321;
+  background-color: rgb(39, 174, 96);
   width: 47px;
   position: absolute;
   top: 50%;
@@ -672,7 +344,7 @@ html {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: #b47835;
+  background-color: rgb(39, 174, 96);
   float: left;
   position: relative;
   bottom: 4px;
@@ -685,7 +357,7 @@ html {
       rgba(30, 35, 38, 0.8),
       rgba(30, 35, 38, 1)
     ),
-    url("../img/edu2.jpeg");
+    url("../img/6939772.jpg");
   background-size: cover;
   background-color: #252a2e;
   color: #fff;
@@ -798,7 +470,7 @@ html {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #b47835;
+  background-color: rgb(39, 174, 96);
   z-index: -1;
   transition: 1s;
 }
@@ -807,6 +479,7 @@ html {
 }
 .contacto .col img {
   width: 100%;
+  height: 87%;
 }
 .contacto .col .info {
   position: absolute;
@@ -824,7 +497,7 @@ html {
   margin-bottom: 20px;
 }
 .contacto .col .info ul li i {
-  color: #b47835;
+  color: rgb(39, 174, 96);
   display: inline-block;
   margin-right: 20px;
 }
@@ -856,7 +529,7 @@ footer .arriba {
   display: block;
   width: 50px;
   height: 50px;
-  background-color: #b47835;
+  background-color: rgb(39, 174, 96);
   color: #fff;
   position: absolute;
   left: 50%;
@@ -886,7 +559,7 @@ footer .arriba {
     display: block !important;
   }
   nav.responsive ul li {
-    border-bottom: 1px solid #b47835;
+    border-bottom: 1px solid rgb(39, 174, 96);
     padding: 10px 0;
   }
 }

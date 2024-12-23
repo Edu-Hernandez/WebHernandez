@@ -1,13 +1,10 @@
-
 $(document).ready(function(){
     $('.carousel').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        prevArrow: $('.prev'), // Flecha anterior
-        nextArrow: $('.next'), // Flecha siguiente
+        autoplay: true, // Activa el desplazamiento automático
+        autoplaySpeed: 2000, // Velocidad del desplazamiento automático (en milisegundos)
         responsive: [
             {
                 breakpoint: 1024,
@@ -34,6 +31,7 @@ $(document).ready(function(){
         ]
     });
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var proyectosLink = document.getElementById("proyectos");
